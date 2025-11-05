@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwenShop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #000;
+      border-bottom: 1px solid #111;
+    }
+    header h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    .hero {
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url('hero.jpg') center/cover no-repeat;
+    }
+    .hero h2 {
+      font-size: 48px;
+      text-transform: uppercase;
+    }
+    .hero p {
+      margin-top: 10px;
+      font-size: 18px;
+      max-width: 500px;
+    }
+    .btn {
+      margin-top: 25px;
+      padding: 14px 32px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      background: #fff;
+      color: #000;
+      text-transform: uppercase;
+    }
+    .products {
+      padding: 60px 40px;
+    }
+    .products h3 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+    .item {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      border-radius: 4px;
+    }
+    .item img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .item h4 {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    .item button {
+      margin-top: 12px;
+      padding: 10px 24px;
+      background: #fff;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SWENSHOP</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="https://wa.me/">Order</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bold Streetwear</h2>
+    <p>Limited drops. No excuses. Wear your identity.</p>
+    <button class="btn">Shop Now</button>
+  </section>
+
+  <section class="products" id="products">
+    <h3>Featured Drops</h3>
+    <div class="grid">
+      <div class="item">
+        <img src="shirt1.jpg" alt="Product" />
+        <h4>Blackout Tee</h4>
+        <button>Order</button>
+      </div>
+      <div class="item">
+        <img src="hoodie1.jpg" alt="Product" />
+        <h4>Night Hoodie</h4>
+        <button>Order</button>
+      </div>
+      <div class="item">
+        <img src="shorts1.jpg" alt="Product" />
+        <h4>Wave Shorts</h4>
+        <button>Order</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
