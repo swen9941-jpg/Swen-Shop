@@ -16,123 +16,94 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      background: #000;
-      border-bottom: 1px solid #111;
     }
-    header h1 {
-      font-size: 28px;
+    h1 {
+      font-family: 'Impact', 'Anton', sans-serif;
+      font-weight: 900;
       letter-spacing: 2px;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
-    .hero {
-      height: 70vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: url('hero.jpg') center/cover no-repeat;
-    }
-    .hero h2 {
-      font-size: 48px;
       text-transform: uppercase;
     }
-    .hero p {
-      margin-top: 10px;
-      font-size: 18px;
-      max-width: 500px;
-    }
-    .btn {
-      margin-top: 25px;
-      padding: 14px 32px;
-      border: none;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
+    a.button {
+      display: inline-block;
       background: #fff;
       color: #000;
-      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-weight: bold;
     }
-    .products {
-      padding: 60px 40px;
-    }
-    .products h3 {
+    section.products {
+      padding: 40px;
       text-align: center;
-      font-size: 32px;
-      margin-bottom: 40px;
     }
-    .grid {
+    section.products h2 {
+      font-family:'Impact','Anton',sans-serif;
+      letter-spacing:2px;
+    }
+    .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 20px;
+      margin-top: 30px;
     }
-    .item {
+    .product-card {
       background: #111;
       padding: 20px;
-      text-align: center;
-      border-radius: 4px;
+      border-radius: 10px;
     }
-    .item img {
+    .product-card img {
       width: 100%;
-      height: 260px;
-      object-fit: cover;
-      border-radius: 4px;
+      border-radius: 10px;
     }
-    .item h4 {
-      margin-top: 15px;
-      font-size: 18px;
+    .product-card h3 {
+      margin: 10px 0 5px 0;
     }
-    .item button {
-      margin-top: 12px;
-      padding: 10px 24px;
-      background: #fff;
-      color: #000;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
+    .product-card p {
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>SWENSHOP</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#products">Products</a>
-      <a href="https://wa.me/">Order</a>
-    </nav>
   </header>
 
-  <section class="hero">
-    <h2>Bold Streetwear</h2>
-    <p>Limited drops. No excuses. Wear your identity.</p>
-    <button class="btn">Shop Now</button>
-  </section>
-
-  <section class="products" id="products">
-    <h3>Featured Drops</h3>
-    <div class="grid">
-      <div class="item">
-        <img src="shirt1.jpg" alt="Product" />
-        <h4>Blackout Tee</h4>
-        <button>Order</button>
+  <section class="products">
+    <h2>NEW DROPS</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="Copilot_20250928_120721.png" />
+        <h3>SWEN STEPPPA TEE</h3>
+        <p>Price: C$350</p>
+        <a class="button" href="https://wa.me/50584231737?text=Hi%2C%20I%20want%20to%20order%20the%20SWEN%20STEPPPA%20TEE%20(C%24350)%20Size%3A%20M%2C%20Color%3A%20Black">Order via WhatsApp</a>
       </div>
-      <div class="item">
-        <img src="hoodie1.jpg" alt="Product" />
-        <h4>Night Hoodie</h4>
-        <button>Order</button>
+      <div class="product-card">
+        <img src="Copilot_20250928_121600.png" />
+        <h3>FEAR NONE TEE</h3>
+        <p>Price: C$350</p>
+        <a class="button" href="https://wa.me/50584231737?text=Hi%2C%20I%20want%20to%20order%20the%20FEAR%20NONE%20TEE%20(C%24350)%20Size%3A%20M%2C%20Color%3A%20Black">Order via WhatsApp</a>
       </div>
-      <div class="item">
-        <img src="shorts1.jpg" alt="Product" />
-        <h4>Wave Shorts</h4>
-        <button>Order</button>
+      <div class="product-card">
+        <img src="Copilot_20250928_123421.png" />
+        <h3>STAY DANGEROUS TEE</h3>
+        <p>Price: C$350</p>
+        <a class="button" href="https://wa.me/50584231737?text=Hi%2C%20I%20want%20to%20order%20the%20STAY%20DANGEROUS%20TEE%20(C%24350)%20Size%3A%20M%2C%20Color%3A%20Black">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <img src="Copilot_20250929_215509.png" />
+        <h3>SWEN STREET SHORTS</h3>
+        <p>Price: C$350</p>
+        <a class="button" href="https://wa.me/50584231737?text=Hi%2C%20I%20want%20to%20order%20the%20SWEN%20STREET%20SHORTS%20(C%24350)%20Size%3A%20M%2C%20Color%3A%20Black">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <img src="Copilot_20250930_223529.png" />
+        <h3>SWEN SIGNATURE CAP</h3>
+        <p>Price: C$350</p>
+        <a class="button" href="https://wa.me/50584231737?text=Hi%2C%20I%20want%20to%20order%20the%20SWEN%20SIGNATURE%20CAP%20(C%24350)%20Size%3A%20M%2C%20Color%3A%20Black">Order via WhatsApp</a>
       </div>
     </div>
   </section>
+
 </body>
 </html>
